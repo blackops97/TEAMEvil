@@ -1,4 +1,4 @@
--- -*- coding: utf-8 -*-
+-- -*- coding: utf-8 -*- 
 --
 -- Simple JSON encoding and decoding in pure Lua.
 --
