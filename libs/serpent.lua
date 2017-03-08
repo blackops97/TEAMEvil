@@ -5,7 +5,7 @@ local badtype = {thread = true, userdata = true, cdata = true}
 local keyword, globals, G = {}, {}, (_G or _ENV)
 for _,k in ipairs({'and', 'break', 'do', 'else', 'elseif', 'end', 'false',
   'for', 'function', 'goto', 'if', 'in', 'local', 'nil', 'not', 'or', 'repeat',
-  'return', 'then', 'true', 'until', 'while'}) do keyword[k] = true end
+  'return', 'then', 'true', 'until', 'while'}) do keyword[k] = true end 
 for k,v in pairs(G) do globals[v] = k end -- build func to name mapping
 for _,g in ipairs({'coroutine', 'debug', 'io', 'math', 'string', 'table', 'os'}) do
   for k,v in pairs(G[g] or {}) do globals[v] = g..'.'..k end end
