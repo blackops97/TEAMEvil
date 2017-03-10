@@ -40,9 +40,9 @@ local hash = "gp_lang:"..msg.chat_id_
 local lang = redis:get(hash)
 local sudo_users = _config.sudo_users
   if not lang then
- text = "*💡 List of sudo users :*\n"
+ text = "*🔎 List of sudo users :*\n"
    else
- text = "*💡 قائمه المطورين : \n"
+ text = "*🔎 قائمه المطورين : \n"
   end
 for i=1,#sudo_users do
     text = text..i.." - "..sudo_users[i].."\n"
@@ -67,9 +67,9 @@ text = "*🔎 قائمه الاداريين : *\n"
 		  	end
 		  	if compare == text then
    if not lang then
-		  		text = '_No_ *admins* _available_'
+		  	text = '_🔎No_ *admins* _available_'
       else
-		  		text = '*   💡 لا يوجد اداريين  *'
+		  		text = '*   🔎 لا يوجد اداريين  *'
            end
 		  	end
 		  	return text
