@@ -518,9 +518,9 @@ local lang = redis:get(hash)
     local i = 1
   if not data[tostring(msg.chat_id_)] then
   if not lang then
-    return '_Group is not added_'
+   return '_❗️Group is not added⁉️_'
 else
-    return '*المجموعه ليست مضافه*'
+    return '*❗️المجموعه ليست مضافه⁉️*'
    end
   end
   -- determine if table is empty
@@ -550,9 +550,9 @@ local lang = redis:get(hash)
     local i = 1
   if not data[tostring(msg.chat_id_)] then
   if not lang then
-    return '_Group is not added_'
+    return '_❗️Group is not added⁉️_'
 else
-   return '*المجموعه ليست مضافه*'
+    return '*❗️المجموعه ليست مضافه⁉️*'
    end
   end
   -- determine if table is empty
@@ -613,9 +613,9 @@ local lang = redis:get(hash)
     end
   if not data[tostring(msg.chat_id_)] then
   if not lang then
-    return '_Group is not added_'
+    return '_❗️Group is not added⁉️_'
 else
-    return '*المجموعة ليست مضافة*'
+    return '*❗️المجموعه ليست مضافه⁉️*'
    end
   end
   -- determine if table is empty
@@ -631,7 +631,7 @@ else
     save_data(_config.moderation.data, data)
     end
       if not lang then
-       filterlist = '*List of filtered words :*\n'
+      filterlist = '*🔎List of filtered words :*\n'
          else
        filterlist = '_🔎 قائمه الكلمات الممنوعه\n'
     end
