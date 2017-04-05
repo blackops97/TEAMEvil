@@ -76,7 +76,7 @@ function create_config( )
     admins = {},
     disabled_channels = {},
     moderation = {data = './data/moderation.json'},
-    info_text = [[TEAMEvil v6 \nFor More Information Subscribe To The Channel @TEAMEvil \n\n https://github.com/blackops97/TEAMEvil\n\nDev : @TH3_Evil\n
+    info_text = [[TEAMEvil \nFor More Information Subscribe To The Channel @TEAMEvil \n\n https://github.com/blackops97/TEAMEvil\n\nDev : @TH3_Evil\n
 ]],
   }
   serialize_to_file(config, './data/config.lua')
